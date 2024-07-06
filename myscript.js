@@ -6,8 +6,8 @@ const resetButton = document.createElement('button');
 resetButton.textContent = "Reset Grid";
 
 function promptUser(){
-    let userInput = prompt("How big would you like the grid to be? (Please choose a number less than 100");
-    if(userInput > 100){
+    let userInput = prompt("How big would you like the grid to be? (Please choose a number less than 100)");
+    if(userInput > 100 || typeof(userInput) != 'number'){
         alert("Please choose a number less than 100");
         return promptUser();
     }
