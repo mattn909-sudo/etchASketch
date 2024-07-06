@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex: 1;
+    max-width: 750px;
+}
+
+.rowGrid{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    display: flex;
+    flex:1;
+}
+
+.container{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    min-height: 750px;
+    max-height: 750px;
+    max-width: 750px;
+    min-width: 750px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+    font-size: 30px; 
+    background-color: #3882f6;
+    border-radius: 10px;
+}
