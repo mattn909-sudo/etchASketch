@@ -7,7 +7,8 @@ resetButton.textContent = "Reset Grid";
 
 function promptUser(){
     let userInput = prompt("How big would you like the grid to be? (Please choose a number less than 100)");
-    if(userInput > 100 || typeof(userInput) != 'number'){
+    parseInt(userInput);
+    if(userInput > 100 || isNaN(userInput)){
         alert("Please choose a number less than 100");
         return promptUser();
     }
